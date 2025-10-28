@@ -5,22 +5,22 @@ import { RatchetDb } from 'src/parts/db/ratchet.db';
 
 @Injectable()
 export class PartsService {
-    constructor(
-        private readonly bitDb: BitDb,
-        private readonly ratchetDb: RatchetDb,
-        private readonly bladesDb: BladeDb,
-    ) { }
+  constructor(
+    private readonly bitDb: BitDb,
+    private readonly ratchetDb: RatchetDb,
+    private readonly bladesDb: BladeDb,
+  ) { }
 
-    getBlades() {
-        return this.bladesDb.getAll();
-    }
+  getBlades() {
+    return this.bladesDb.getAll();
+  }
 
-    getRatchets() {
-        return this.ratchetDb.getAll();
-    }
+  getRatchets() {
+    return this.ratchetDb.getAll();
+  }
 
-    getBits() {
-        return this.bitDb.getAll();
-    }
+  getBits() {
+    return this.bitDb.getAll();
+  }
 
 }

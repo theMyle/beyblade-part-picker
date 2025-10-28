@@ -1,0 +1,19 @@
+### ADD ITEM
+POST http://localhost:3000/
+Content-Type: application/json
+
+{
+    "name": "Test Product",
+    "description": "This is a test product by themyle",
+    "stock": 5,
+    "price": 6969
+}
+
+### GET ITEMS
+
+GET http://localhost:3000/
+
+
+### DELETE ITEMS
+
+DELETE http://localhost:3000/ID-HERE
